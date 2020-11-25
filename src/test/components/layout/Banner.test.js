@@ -15,5 +15,4 @@ describe('Pruebas en el componente <Banner />', () => {
    test('Debe de cortar el parrafo con la cantidad de caracteres que le pasemos', () => {
       expect(truncate('palabra',6)).toBe('palab...')
    });
-   
 });
