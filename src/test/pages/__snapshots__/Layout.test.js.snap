@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en el componente <LayoutScreen /> Debe de crear un segundo snapshot pero con datos 1`] = `
+<div
+  className="app"
+>
+  <Navbar />
+  <Banner />
+  <div
+    className="app"
+  >
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/discover/tv?api_key=f5db8a9255d67e2282b48f43ea95054a&with_networks=213"
+      isLargeRow={true}
+      title="NETFLIX ORIGINALS"
+    />
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=f5db8a9255d67e2282b48f43ea95054a&language=en-US"
+      isLargeRow={true}
+      title="Trending Now"
+    />
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/movie/top_rated?api_key=f5db8a9255d67e2282b48f43ea95054a&language=en-US"
+      isLargeRow={true}
+      title="Top Rated"
+    />
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/discover/movie?api_key=f5db8a9255d67e2282b48f43ea95054a&with_genres=28"
+      isLargeRow={true}
+      title="Action Movies"
+    />
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/discover/movie?api_key=f5db8a9255d67e2282b48f43ea95054a&with_genres=35"
+      isLargeRow={true}
+      title="Comedy Movies"
+    />
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/discover/movie?api_key=f5db8a9255d67e2282b48f43ea95054a&with_genres=27"
+      isLargeRow={true}
+      title="Horror Movies"
+    />
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/discover/movie?api_key=f5db8a9255d67e2282b48f43ea95054a&with_genres=10749"
+      isLargeRow={true}
+      title="Romance Movies"
+    />
+    <Memo()
+      fetchUrl="https://api.themoviedb.org/3/discover/movie?api_key=f5db8a9255d67e2282b48f43ea95054a&with_genres=99"
+      isLargeRow={true}
+      title="Documentaries"
+    />
+  </div>
+</div>
+`;
+
+exports[`pruebas en el componente <LayoutScreen /> Debe de hacer match con el snapshot cuando esta cargando la data con un loader en true 1`] = `
+<div
+  className="app"
+>
+  <Loader />
+  <Navbar />
+  <Banner />
+</div>
+`;

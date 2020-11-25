@@ -8,11 +8,11 @@ const useGet = (url) => {
     loading: true,
     error: null,
   });
-  useEffect(() => {
+  useEffect(()=> {
     return () => {
-      isMounted.current = false;
-    };
-  }, []);
+        isMounted.current = false;
+    }
+}, []);
   useEffect(() => {
     const getData = async () => {
       try {
@@ -27,7 +27,9 @@ const useGet = (url) => {
     if(isMounted.current){
         getData();
     }
-  }, [url]);
+
+     
+   }, [url]);
 
   return state;
 };
